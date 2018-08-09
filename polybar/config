@@ -1,0 +1,54 @@
+;=====================================================
+;     File Includes
+;=====================================================
+
+[section/base]
+include-file = /home/sirsharanchakradhar/.config/polybar/master.conf
+include-file = /home/sirsharanchakradhar/.config/polybar/modules.conf
+
+
+;=====================================================
+;     Openbox Bars
+;=====================================================
+
+[bar/openbox-bar]
+inherit = bar/master
+
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor =
+
+modules-left   = jgmenu mpd
+modules-center =
+modules-right  = filesystem memory temperature coreuse  volume-bar battery menu
+
+
+;=====================================================
+;     i3 Bars
+;=====================================================
+
+[bar/i3-bar]
+inherit = bar/master
+bottom = true
+separator =
+module-left-margin = 0
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor =
+
+modules-right = redshift xkeyboard compton_toggle pkg clock network window_switch
+modules-left = chrome termite thunar music atom mailbox excel word ppt virtualbox pycharm
+modules-center  =
+
+
+;=====================================================
+;     Bspwm Bars
+;=====================================================
+
+[bar/bspwm-bar]
+inherit = bar/master
+left = true
+; Use $ xrandr -q | grep " connected" | cut -d ' ' -f1
+monitor =
+
+modules-left   = bspwm menu
+modules-center = clock
+modules-right  = pkg memory temperature coreuse network volume battery
