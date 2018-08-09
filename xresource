@@ -1,0 +1,105 @@
+! Base colors
+*.foreground: #2b2b2b
+*.background: #2b2b2b
+*.cursorColor: #B6A49B
+
+*.color0: #2b2b2b
+*.color1: #bf616a
+*.color2: #a3be8c
+*.color3: #ebcb8b
+*.color4: #8fa1b3
+*.color5: #b48ead
+*.color6: #2b2b2b
+*.color7: #65737e
+
+*.color8: #65737e
+*.color9: #bf616a
+*.color10: #a3be8c
+*.color11: #ebcb8b
+*.color12: #8fa1b3
+*.color13: #b48ead
+*.color14: #222222
+*.color15: #F6F6F6
+
+! Rofi
+rofi.font: Ubuntu Mono 12
+!rofi.padding: 20
+rofi.line-padding: 2
+!rofi.color-enabled: true
+!rofi.hide-scrollbar: true
+!rofi.separator-style: solid
+!rofi.color-window: #EFF1F5, #2b303b, #EFF1F5
+!rofi.color-normal: #EFF1F5, #2b303b, #EFF1F5, #8fa1b3, #2b303b
+rofi.color-enabled: true
+!                   'background', 'border', 'dividing line'
+rofi.color-window: 	#2b2b2b, 	  #B6A49B, 	 #B6A49B
+! 					'bg', 	  'fg' 	 'bgalt'   'hlbg' 	'hlfg'
+rofi.color-normal: #2b2b2b, #B6A49B, #2b2b2b, #B6A49B, #2b2b2b
+rofi.color-active: #B6A49B, #2b2b2b, #B6A49B, #2b2b2b, #B6A49B
+rofi.color-urgent: #B6A49B, #2b2b2b, #B6A49B, #2b2b2b, #B6A49B
+rofi.separator-style:   none
+rofi.modi: drun,run,window,ssh
+!rofi.fullscreen:        false
+!rofi.padding:           0
+!rofi.hide-scrollbar:    false
+!rofi.line-margin:       0
+!rofi.yoffset:           00
+!rofi.xoffset:           0
+!rofi.width:            1920
+!rofi.lines:            20
+
+! xterm
+xterm*font: Ubuntu Mono
+xterm*faceName: Ubuntu Mono:size=11:antialias=false
+xterm*loginShell: true
+xterm*vt100*geometry: 90x34
+xterm*saveLines: 2000
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*termName: xterm-256color
+xterm*eightBitInput: false
+
+! URxvt
+URxvt*saveline: 15000
+URxvt*termName: rxvt-256color
+URxvt*iso14755: false
+URxvt*depth: 32
+URxvt*background: [90]#2b303b
+URxvt*scrollBar: false
+URxvt*scrollBar_right: false
+URxvt*internalBorder: 0
+URxvt*externalBorder: 0
+URxvt*letterSpace: -1
+URxvt.font: xft:Ubuntu Mono:size=11
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.m-c: perl:clipboard:copy
+URxvt.keysym.m-v: perl:clipboard:paste
+URxvt.urlLauncher: exo-open
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+URxvt.geometry: 90x30
+URxvt.tabbed.tabbar-fg: 4
+URxvt.tabbed.tabbar-bg: 16
+URxvt.tabbed.tab-fg: 15
+URxvt.tabbed.tab-bg: 4
+URxvt*buffered: false
+
+! UXTerm
+UXTerm*termName: xterm-256color
+UXTerm*cursorColor: white
+UXTerm*VT100.geometry: 90x30
+UXTerm*font: Ubuntu Mono
+UXTerm*faceSize: 12
+UXTerm*dynamicColors: true
+UXTerm*utf8: 2
+UXTerm*eightBitInput: true
+UXTerm*saveLines: 10000
+UXTerm*scrollKey: true
+UXTerm*scrollTtyOutput: false
+UXTerm*scrollBar: false
+UXTerm*rightScrollBar: false
+UXTerm*jumpScroll: true
+UXTerm*multiScroll: true
+UXTerm*toolBar: false
+
